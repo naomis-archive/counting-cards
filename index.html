@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Counting Cards</title>
+  </head>
+  <body>
+    <h1>Counting Cards</h1>
+    <p>
+      Counting Cards is a method used to predict the likelihood of being dealt
+      high-value cards in Blackjack and adjusting your bet accordingly (to
+      increase the chances of winning). When low cards are dealt, the count
+      increases. When high cards are dealt, the count decreases. If the count is
+      high, you should bet higher. If the count is low, you should bet lower.
+    </p>
+    <h2>Instructions</h2>
+    <p>
+      Click the deal button to deal 5 cards. The computer will begin the
+      card-counting method. You can click the deal button again to deal another
+      5 cards (but your current 5 will be discarded). At any time, you can enter
+      your guess for the current count in the box, and click "Check count". The
+      computer will let you know if you are correct. Click the "Reset" button to
+      reset the count.
+    </p>
+    <button onclick="drawbutton()">Draw Cards!</button>
+    <input type="text" placeholder="Your guess" id="count-guess" /><button
+      onclick="checkcount()"
+    >
+      Guess the Count!
+    </button>
+    <button onclick="reset()">Reset</button>
+    <div id="card-container"></div>
+  </body>
+  <footer>
+    <a href="https://www.nhcarrigan.com">&copy; Nicholas Carrigan</a>
+  </footer>
+  <script src="index.js"></script>
+</html>
