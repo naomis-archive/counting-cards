@@ -8,3 +8,7 @@ body {
 a {
   color: #ffffff;
 }
+
+ul {
+  list-style: none;
+}

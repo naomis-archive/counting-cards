@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <title>Counting Cards - Intermediate</title>
+  </head>
+  <body>
+    <h1>Counting Cards - Intermediate</h1>
+    <p>
+      For this difficulty level, you will be given a set of five cards, but only
+      one at a time. Each card will be visible for only one second - then the
+      next card will appear. At the end of the sequence, make your guess for the
+      current count value!
+    </p>
+    <h2>Instructions</h2>
+    <p>
+      Click the deal button to deal 5 cards. The computer will begin the
+      card-counting method and deal the sequence of cards. After each sequence,
+      you can enter your guess for the current count in the box, and click
+      "Check count". The computer will let you know if you are correct. Click
+      the "Reset" button to reset the count.
+    </p>
+    <button onclick="drawbutton()">Draw Cards!</button>
+    <input type="text" placeholder="Your guess" id="count-guess" /><button
+      onclick="checkcount()"
+    >
+      Guess the Count!
+    </button>
+    <button onclick="reset()">Reset</button>
+    <div id="card-container">
+      <img src="../cards-svg/Joker1.svg" />
+    </div>
+  </body>
+  <footer>
+    <a href="../index.html">Return to difficulty selection</a>
+  </footer>
+  <script src="./intermediate.js"></script>
+</html>
