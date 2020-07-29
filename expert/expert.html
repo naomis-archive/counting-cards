@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <title>Counting Cards - Expert</title>
+  </head>
+  <body>
+    <h1>Counting Cards - Expert</h1>
+    <p>
+      For this difficulty level, you will play some actual Blackjack! Your goal
+      is to keep count of the cards while also playing the game.
+    </p>
+    <h2>Instructions</h2>
+    <p>
+      Click the deal button to deal a hand of cards. You'll receive your two
+      cards, face up, and the dealer will receive their two cards (one will be
+      hidden). Your goal is to get as close as possible to 21 without going
+      over. You may "hit", to take another card, or "stand", to end your turn
+      and let the dealer play. The dealer will hit if its total is less than 17,
+      otherwise the dealer will stand. For simplicity sake, special rules are
+      not applied - you will not have the option to split, double down, and the
+      dealer will not automatically win on a natural 21. Aces will always be
+      valued at 11.
+    </p>
+    <p>
+      At any time, you can enter a guess for the current count value, and click
+      the "Guess the Count!" button to validate your guess. Click "Reset" to
+      start the game over.
+    </p>
+    <button onclick="dealhand()">Deal Hand</button>
+    <input type="text" placeholder="Your guess" id="count-guess" /><button
+      onclick="checkcount()"
+    >
+      Guess the Count!
+    </button>
+    <button onclick="reset()">Reset</button>
+    <p>Dealer Cards: <span id="dealer-score">0</span> points</p>
+    <div id="dealer-container">
+      <img id="dealer-one" src="../cards-svg/Joker1.svg" />
+      <img id="dealer-two" src="../cards-svg/Joker1.svg" />
+    </div>
+    <p>Player Cards: <span id="player-score">0</span> points</p>
+    <div id="player-container">
+      <img id="player-one" src="../cards-svg/Joker1.svg" />
+      <img id="player-two" src="../cards-svg/Joker1.svg" />
+    </div>
+    <button id="hit-button" onclick="hit()" style="display: none;">Hit!</button>
+    <button id="stand-button" onclick="stand()" style="display: none;">
+      Stand
+    </button>
+  </body>
+  <footer>
+    <a href="../index.html">Return to difficulty selection</a>
+  </footer>
+  <script src="./expert.js"></script>
+</html>
