@@ -7,7 +7,7 @@ This is a simple card-counting trainer to help learn the Blackjack technique of 
 
 ## Live Version
 
-This page is currently deployed. [View the live website.](https://www.nhcarrigan.com/counting-cards)
+This project is archived and thus is not deployed.
 
 ## Feedback and Bugs
 
